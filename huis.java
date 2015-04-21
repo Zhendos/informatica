@@ -1,8 +1,8 @@
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.applet.*;
-
 
 
 public class tekenen extends Applet implements MouseListener
@@ -13,6 +13,8 @@ public class tekenen extends Applet implements MouseListener
 	
 	int xCoordinate;
 	int yCoordinate;
+	
+	String s;
 	
 	public void init()
 	{
@@ -25,6 +27,8 @@ public class tekenen extends Applet implements MouseListener
 			g.setColor(Color.WHITE);
 			g.drawString("x is " + xCoordinate , 10, 10);
 			g.drawString("Y is " + yCoordinate, 10, 25);
+			
+			g.drawString("Text: " + s, 10, 50);
 				
 			g.setColor(new Color(245, 223, 116));
 			g.drawRect(50, 100, 100, 100);
@@ -65,5 +69,4 @@ public class tekenen extends Applet implements MouseListener
 
 		
 	}
-
 }
