@@ -12,6 +12,7 @@ public class tekenen extends Applet implements MouseListener
 
 	public void init()
 	{
+		
 		setBackground(Color.black);
 	}
 	
@@ -33,6 +34,12 @@ public class tekenen extends Applet implements MouseListener
 		
 		g.drawRect(120, 355, 30, 145); // Welmer haar staaf.
 		g.drawString("Welmer", 115, 520);//Welmer zijn naam.
+		
+		g.setColor(Color.RED); 
+		
+		g.drawRect(200, 402, 30, 98); //Noa haar staaf.
+		g.drawString("Noa", 205, 520);
+		
 
 		addMouseListener(this);
 	}
